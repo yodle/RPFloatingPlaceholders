@@ -355,6 +355,7 @@
 	//Text was set programmatically, so show the floating label but don't animate it
 	if (!notification && self.hasText) {
 		[self showFloatingLabelWithAnimation:NO];
+		self.shouldDrawPlaceholder = NO;
 		return;
 	}
 	
